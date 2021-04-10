@@ -1,4 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-ReactDOM.render(<h1>Hello Sly!</h1>, document.getElementById("root"));
+const customStyle = {
+  color: "red",
+  fontSize: "20px",
+  border: "1px solid black",
+  backgroundColor: "grey"
+};
+
+customStyle.color = "blue";
+
+ReactDOM.render(
+  <h1 style={customStyle}>Hello Sly!</h1>,
+  document.getElementById("root")
+);
